@@ -1,0 +1,120 @@
+from random import randint
+
+player = input('rock(r), paper(p), scissors(s), lizard(l), spock(sp) ?')
+
+if player == 'r':
+    print('0', end=' ')
+    
+elif player == 'p':
+    print('__', end=' ')
+
+elif player == 's':
+    print('>8', end=' ')
+    
+elif player == 'l':
+    print(':*~*:.', end=' ')
+    
+elif player == 'sp':
+    print('\V/', end=' ')
+    
+else:
+    print('??')
+    
+print('vs', end=' ')
+
+
+selected = randint(1,5)
+
+if selected == 1:
+    computer = 'r'
+    print('0')
+    
+elif selected == 2:
+    computer = 'p'
+    print('__')
+    
+elif selected == 3:
+    computer = 's'
+    print('>8')
+    
+elif selected == 4:
+    computer = 'l'
+    print(':*~*:.')
+    
+else:
+    computer = 'sp'
+    print('\V/')
+    
+    
+if player == computer :
+    print('DRAW')
+    
+elif player == 'r' and computer == 's':
+    print('player wins!')
+    
+elif player == 'r' and computer == 'p':
+    print('Computer wins!')
+    
+elif player == 'r' and computer == 'l':
+    print('player wins!')
+    
+elif player == 'r' and computer == 'sp':
+    print('Computer wins!')
+    
+
+elif player == 'p' and computer == 'r':
+    print('player wins!')
+    
+elif player == 'p' and computer == 's':
+    print('Computer wins!')
+    
+elif player == 'p' and computer == 'sp':
+    print('player wins!')
+    
+elif player == 'p' and computer == 'l':
+    print('Computer wins!')
+       
+elif player == 's' and computer == 'p':
+    print('player wins!')
+    
+elif player == 's' and computer == 'r':
+    print('Computer wins!')
+    
+elif player == 's' and computer == 'l':
+    print('player wins!')
+    
+elif player == 's' and computer == 'sp':
+    print('Computer wins!')
+    
+    
+elif player == 'l' and computer == 'r':
+    print('Computer wins!')
+    
+elif player == 'l' and computer == 'p':
+    print('player wins!')
+    
+elif player == 'l' and computer == 's':
+    print('Computer wins!')
+    
+elif player == 'l' and computer == 'sp':
+    print('player wins!')
+    
+    
+elif player == 'sp' and computer == 'r':
+    print('player wins!')
+    
+    
+elif player == 'sp' and computer == 'p':
+    print('Computer wins!')
+    
+    
+elif player == 'sp' and computer == 's':
+    print('player wins!')
+    
+    
+elif player == 'sp' and computer == 'l':
+    print('Computer wins!')
+    
+    
+else:
+    print('Huh??')
